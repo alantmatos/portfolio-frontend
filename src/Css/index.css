@@ -39,11 +39,11 @@ body {
 }
 
 .navMenu a:hover {
-  color: #e9c71b;
+  color: #68CBF8;
 }
 
 .hero{
-  height: 72vh;
+  height: 71vh;
   color: #f6f4e6;
   display: flex;
   justify-content: center;
@@ -53,7 +53,7 @@ body {
 .hero h1{
 }
 .hero span{
-  color: rgb(60, 174, 136);
+  color: #68CBF8;
   font-size: 40px;
 }
 .hero span{
@@ -79,7 +79,7 @@ body {
 
 
 .about{
-  height: 72vh;
+  height: 71vh;
   color: #f6f4e6;
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@ body {
 }
 
 .contact{
-  height: 72vh;
+  height: 71vh;
   color: #f6f4e6;
   display: flex;
   justify-content: center;
@@ -99,7 +99,7 @@ body {
 }
 
 .portfolio{
-  height: 72vh;
+  height: 71vh;
   color: #f6f4e6;
   display: flex;
   justify-content: center;
@@ -112,7 +112,6 @@ body {
   width: 100vw; 
   padding-top: 40px;
   color: #fff;
-
 }
 
 .socials{
@@ -120,14 +119,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1em 0 3em 0;
+  margin: 1em 0 3em 0;  
+}
+.socials a{
+  color: white;
+  font-size: 1.5rem;
+}
+.socials a :hover{
+  color: #68CBF8;
+  font-size: 1.5rem;
 }
 
 .socials li{
   margin: 0 10px;
   text-decoration: none;
-  
-
 }
 
 .footer-content{
@@ -136,8 +141,8 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-
 }
+
 .footer-bottom{
   background-color: #000;
   width: 100vw;
