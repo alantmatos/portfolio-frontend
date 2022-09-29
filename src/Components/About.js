@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className='about'>
         <p>
-          <hr></hr><br></br>
+          <br></br>
 
         Hi, I'm Alan, Brazilian, Curious, Creative and a Passionate Full Stack Software Engineer.<br></br>
 Why passionate? <br></br>
@@ -26,7 +26,6 @@ Please review my resume for a full descripton of my skills.<br></br>
 I look forward to discussing how my capabilities 
 can fit your team. <br></br>
 <br></br>
-<hr></hr>
         </p>
     </div>
   )
