@@ -4,19 +4,28 @@
 .portfolio {
   /* height: 71vh; */
   color: #f6f4e6;
-  margin-left: 28vw;
-  justify-content: center;
-  align-items: center;
-}
+  /* justify-content: center;
+  align-items: center;*/
+} 
+
 
 .project-info {
   border-style:groove;
   border-color: gray;
-  width: 40vw;
-  height: 50vh;
-  margin: 10px;
+  /* width: 40vw;
+  height: 50vh;*/
+  margin: 10px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
 
+.data-container{
+height: 300px;
+width: 500px;
+margin-right: 10px;
+}
 
 
 .project-name{  
@@ -28,7 +37,7 @@
   font-size: 30px;
 }
 
-.project-lang {
+.project-languages {
   height: 80px;
   display: flex;
   align-items: center;
@@ -37,7 +46,6 @@
 
 .project-description {
   height: 110px;
-  width: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,12 +57,35 @@
   align-items: center;
   height: 244px;
   width: 321px;
+  margin-left: 20px;
 }
 
 .project-cover img{
+  height: 250px;
+  width: 400px;
+}
+
+.images-container{
   display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prints-container{
+  height: 200px;
+  width: 200px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 244px;
-  width: 321px;
+
+}
+.prints-frame{  
+  border-style: solid;
+  border-color: #68CBF8;
+}
+.prints{
+  height: 50px;
+  width: 50px;
+ 
+
 }
