@@ -1,38 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
+/* font-family: Combo; */
 .portfolio {
   /* height: 71vh; */
   color: #f6f4e6;
-  /* display: flex; */
+  margin-left: 28vw;
   justify-content: center;
   align-items: center;
 }
 
 .project-info {
-  border-style: solid;
-  width: 400px;
-  height: 500px;
-  margin: 5px;
+  border-style:groove;
+  border-color: gray;
+  width: 40vw;
+  height: 50vh;
+  margin: 10px;
 }
 
-.project-info h2 {
+
+
+.project-name{  
   display: flex;
   justify-content: center;
-  margin-top: 5px;
+  align-items: center;
   color: #68CBF8;
+  margin-top: 10px;
+  font-size: 30px;
 }
 
 .project-lang {
-  color: aquamarine;
-  width: 200px;
-  height: 140px;
+  height: 80px;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .project-description {
-  color: yellowgreen;
+  height: 110px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-cover {
-  display: flex;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 244px;
+  width: 321px;
+}
+
+.project-cover img{
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   height: 244px;
