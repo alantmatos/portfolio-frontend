@@ -1,39 +1,52 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import Modal from './Modal';
+import { useState, useEffect } from 'react';
+import '../Css/portfolio.css';
 
 const Portfolio = () => {
 
-  const [ projects, setProjects ] = useState ([]);
+  const [projects, setProjects] = useState([]);
+  const [displayModal, setdisplayModal] = useState(false);
+  const [displayProjects, setdisplayProjects] = useState(true);
 
-  useEffect(()=>{ fetchData() },[])
+
+  useEffect(() => { fetchData() }, [])
 
   const fetchData = () => {
     fetch('http://localhost:3000/projects')
-    .then(data => data.json())
-    .then(data => setProjects(data))
+      .then(data => data.json())
+      .then(data => setProjects(data))
   }
-  console.log(projects)
 
+  // { projects ? projects.map(project => project.project_images.map(image => console.log(image.image_link)) ) : console.log("no data")}
+  const manageDisplay = (e) => {
+    console.log(e)
+    // setdisplayModal(!displayModal)
+    // setdisplayProjects(!displayProjects)
+  }
 
-  const renderProjects = projects.map(project=> { 
+  const renderProjects = projects.map(project => {
     return (
-    <div className='project-info' key={project.id}>
-      <h2>{project.project_name} </h2> <br></br> <br></br>
-      <h4>{project.project_languages} </h4> <br></br><br></br>
-      <h4>{project.project_description} </h4>
-      <img src={project.project_images.map(image => image.image_link)} className="project-image"></img>
-    </div>
-    )})
+      <div className='project-info' key={project.id} onClick={(e) => manageDisplay(e)}>
+        <h2>{project.project_name} </h2>
+        <div className='project-lang'><h4>{project.project_languages} </h4></div>
+        <div className='project-description'><h4>{project.project_description} </h4></div>
+        <img className="project-cover" src={project.project_cover}></img>
+      </div>
+    )
+  })
 
 
 
 
   return (
-    <div className='portfolio'>
+    <>
+      {displayModal ? <Modal></Modal> : null}
 
-      {renderProjects}
-    
-    </div>
+      <div className='portfolio'>
+        {displayProjects ? renderProjects : null}
+      </div>
+    </>
   )
 }
 

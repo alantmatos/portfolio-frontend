@@ -1,0 +1,11 @@
+.about {
+  height: 71vh;
+  color: #f6f4e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about p {
+  width: 80vw;
+}

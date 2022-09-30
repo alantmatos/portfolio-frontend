@@ -1,0 +1,40 @@
+.portfolio {
+  /* height: 71vh; */
+  color: #f6f4e6;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.project-info {
+  border-style: solid;
+  width: 400px;
+  height: 500px;
+  margin: 5px;
+}
+
+.project-info h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  color: #68CBF8;
+}
+
+.project-lang {
+  color: aquamarine;
+  width: 200px;
+  height: 140px;
+  align-items: center;
+}
+
+.project-description {
+  color: yellowgreen;
+}
+
+.project-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 244px;
+  width: 321px;
+}

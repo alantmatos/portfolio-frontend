@@ -1,0 +1,11 @@
+.not-found {
+  height: 71vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("https://images.fineartamerica.com/images-medium-large-5/neon-blue-question-mark-ikon-ikon-images.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: whitesmoke;
+
+}
