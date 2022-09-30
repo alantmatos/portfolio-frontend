@@ -6,8 +6,8 @@ import '../Css/portfolio.css';
 const Portfolio = () => {
 
   const [projects, setProjects] = useState([]);
-  const [displayModal, setdisplayModal] = useState(false);
-  const [displayProjects, setdisplayProjects] = useState(true);
+  // const [displayModal, setdisplayModal] = useState(false);
+  // const [displayProjects, setdisplayProjects] = useState(true);
 
 
   useEffect(() => { fetchData() }, [])
@@ -19,22 +19,22 @@ const Portfolio = () => {
   }
 
   // { projects ? projects.map(project => project.project_images.map(image => console.log(image.image_link)) ) : console.log("no data")}
-  const manageDisplay = (e) => {
-    console.log(e)
-    // setdisplayModal(!displayModal)
-    // setdisplayProjects(!displayProjects)
-  }
+  // const manageDisplay = (e) => {
+  //   console.log(e)
+  //   // setdisplayModal(!displayModal)
+  //   // setdisplayProjects(!displayProjects)
+  // }
 
   const renderProjects = projects.map(project => {
     return (
-      <div className='project-info' key={project.id} onClick={(e) => manageDisplay(e)}>
+      <div className='project-info' key={project.id} >
         <div className='data-container'>
           <div className='project-name'><h2>{project.project_name} </h2></div>
           <div className='project-languages'><h4>{project.project_languages} </h4></div>
           <div className='project-description'><h4>{project.project_description} </h4></div>
           <div className='buttons'> 
-            <button> Demo </button>
-            <button> Github Repo</button> 
+            <button className='portfolio-btn'> Demo </button>
+            <button className='portfolio-btn'> Github Repo</button> 
           </div>
         </div>
         <div className='images-container'>
@@ -52,7 +52,7 @@ const Portfolio = () => {
 
   return (
       <div className='portfolio'>
-        {displayProjects ? renderProjects : null}
+        { renderProjects }
       </div>
   )
 }

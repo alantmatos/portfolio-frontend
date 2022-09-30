@@ -64,6 +64,11 @@
   height: 400px;
   width: 550px;
 }
+.project-cover img:hover{  
+  transition: 1s;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
 
 .buttons{
   display: flex;
@@ -75,6 +80,12 @@
   margin-left: 1vw;
   height: 30px;
   width: 90px;
+  cursor: pointer;
+}
+.portfolio-btn:hover{
+  transition: 0.5s;  
+  background-color:#68CBF8;
+  color: black;
 }
 
 .images-container {
