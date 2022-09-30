@@ -32,6 +32,10 @@ const Portfolio = () => {
           <div className='project-name'><h2>{project.project_name} </h2></div>
           <div className='project-languages'><h4>{project.project_languages} </h4></div>
           <div className='project-description'><h4>{project.project_description} </h4></div>
+          <div className='buttons'> 
+            <button> Demo </button>
+            <button> Github Repo</button> 
+          </div>
         </div>
         <div className='images-container'>
           <div className="project-cover" ><img src={project.project_cover}></img></div>

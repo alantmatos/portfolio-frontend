@@ -65,6 +65,18 @@
   width: 550px;
 }
 
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+}
+.buttons button{
+  margin-left: 1vw;
+  height: 30px;
+  width: 90px;
+}
+
 .images-container {
   display: inline-flex;
   align-items: center;
