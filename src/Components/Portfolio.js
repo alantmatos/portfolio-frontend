@@ -33,7 +33,7 @@ const Portfolio = () => {
           <div className='project-languages'><h4>{project.project_languages} </h4></div>
           <div className='project-description'><h4>{project.project_description} </h4></div>
           <div className='buttons'> 
-            <button className='portfolio-btn'> Demo </button>
+            <button className='portfolio-btn'>  Demo </button>
             <button className='portfolio-btn'> Github Repo</button> 
           </div>
         </div>
