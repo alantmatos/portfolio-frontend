@@ -14,6 +14,16 @@
     align-items: center; */
 }
 
+.home-btn{
+  height: 25px;
+  width: 200px;
+  font-size: 20px;
+  color: #68CBF8;
+  background-color: #272727;
+  border-style: none;
+  margin-top: 8px;
+}
+
 .display-contact {
   height: 10vh;
   width: 30vh;

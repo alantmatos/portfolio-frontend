@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className='home-container'>
 
-      <button onClick={() => { manageDisplay() }} > Let's Work Together </button>
+      <button className='home-btn' onClick={() => { manageDisplay() }} > Let's Work Together </button>
 
       {displaycontact ? <div className='display-contact'>
         <div className='contact-info'>
