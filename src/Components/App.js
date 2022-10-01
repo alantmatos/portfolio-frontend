@@ -26,14 +26,3 @@ function App() {
 }
 
 export default App;
-
-
-// rafce
-
-
-
-{/* <div className="App">
-      
-<Navbar></Navbar>
-
-</div> */}
