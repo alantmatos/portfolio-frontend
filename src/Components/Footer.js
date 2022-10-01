@@ -9,7 +9,7 @@ const Footer = () => {
 
       <div className='footer-content'>
         <h3> Alan T Matos</h3>
-        <p> expect something here... </p>
+        <p> "Behold the power of coding!" </p>
         <ul className='socials'>
           <li><a href="https://www.linkedin.com/in/alantmatos/"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a></li>
           <li><a href="#"><FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon></a></li>
@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
 
       <div className='footer-bottom'>
-        <p> copyright @2020 ... more data</p>
+        <p> Powered by React & Ruby on Rails</p>
 
       </div>
 
