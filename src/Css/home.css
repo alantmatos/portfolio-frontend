@@ -9,12 +9,9 @@
   color: #f6f4e6;
   margin-top: 25vh;
   margin-left: 10vw;
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
-.home-btn{
+.home-btn {
   height: 25px;
   width: 200px;
   font-size: 20px;
@@ -22,26 +19,22 @@
   background-color: #272727;
   border-style: none;
   margin-top: 8px;
+  cursor: pointer;
 }
 
 .display-contact {
   height: 10vh;
   width: 30vh;
   font-size: 20px;
-  /* border-style: solid;
-    border-color: #68CBF8; */
 }
 
 .contact-info {
-  display: flexbox;
-  align-items: center;
+  margin: 8px;
 }
 
 .contact-info a {
   text-decoration: none;
   color: #68CBF8;
-  display: flex;
-  justify-content: center;
 }
 
 .contact-info a:hover {
@@ -50,19 +43,11 @@
   color: #90c9e4;
 }
 
-.contact-info h4,
-h5 {
-  display: flex;
-  justify-content: center;
-}
-
-
 
 .dev {
   color: hsl(0, 0%, 30%);
   font-size: 45px;
   font-weight: bold;
-  /* letter-spacing: 1px; */
   cursor: pointer;
   text-transform: uppercase;
   background: linear-gradient(to right, hsl(0, 0%, 30%) 0,

@@ -10,5 +10,6 @@
   display: flexbox;
   align-items: center;
   justify-content: baseline;
+  font-size: 25px;
 
 }
