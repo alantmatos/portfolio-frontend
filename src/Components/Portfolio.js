@@ -8,11 +8,22 @@ const Portfolio = () => {
 
   useEffect(() => { fetchData() }, [])
 
+  // const fetchData = () => {
+  //   fetch('http://localhost:3000/projects')
+  //     .then(data => data.json())
+  //     .then(data => setProjects(data))
+  // }
+  // const fetchData = () => {
+  //   fetch('http://localhost:8001/project')
+  //     .then(data => data.json())
+  //     .then(data => setProjects(data))
+  // };
+  
   const fetchData = () => {
-    fetch('http://localhost:3000/projects')
+    fetch('https://zany-gray-cod-hat.cyclic.app/projects')
       .then(data => data.json())
       .then(data => setProjects(data))
-  }
+  };
 
 
   const renderProjects = projects.map(project => {

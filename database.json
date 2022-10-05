@@ -1,0 +1,28 @@
+{ "project":
+[
+    {
+        "id": 1,
+        "project_name": "BackHome",
+        "project_languages": "JavaScript, React, Ruby on Rails, HTML, CSS",
+        "project_description": "Back Home was designed to be a simple and easy to access tool with only one goal, help lost pets get back to their beloved family.",
+        "project_cover": "https://live.staticflickr.com/65535/52396662582_b043549ddc_b.jpg",
+        "project_images": []
+    },
+    {
+        "id": 2,
+        "project_name": "The Json Blog",
+        "project_languages": "JavaScript, React, Ruby, Sinatra, HTML, CSS",
+        "project_description": "A full CRUD app using React (frontend) + sinatra(backend), It allows the users to add, display, edit and delete posts.",
+        "project_cover": "https://live.staticflickr.com/65535/52396663847_cf760c69f8_b.jpg",
+        "project_images": []
+    },
+    {
+        "id": 3,
+        "project_name": "NotSkull Candy ",
+        "project_languages": "JavaScript, React, Ruby, Postgress, Heroku, Tailwind, HTML, CSS",
+        "project_description": "An e-commerce website allowing users to create an account, view and order products, The application features React + Rails for backend. ",
+        "project_cover": "https://live.staticflickr.com/65535/52397608875_907bb85fc6_b.jpg",
+        "project_images": []
+    }
+]
+}
