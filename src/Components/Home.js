@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import '../Css/home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -14,15 +15,7 @@ const Home = () => {
   return (
     <div className='home-container'>
 
-      <button className='home-btn' onClick={() => { manageDisplay() }} > Let's Work Together </button>
-
-      {displaycontact ? <div className='display-contact'>
-        <div className='contact-info'>
-          <h4>mr.alanmatos@hotmail.com</h4>
-          <h5>+1 929-895-1957</h5>
-          <a href="https://docs.google.com/document/d/1irITA5YLrJ_oSdZyekYTLvdqinvSC3ifHY4lYk8fMMg/edit?usp=sharing"> My Resume </a>
-        </div>
-      </div> : null}
+      <Link to="/contact" className='home-btn'> Lets Work Together </Link>
 
       <div className='hero'>
         <div><h1>Hey, I'm Alan,</h1></div>
