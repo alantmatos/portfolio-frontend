@@ -33,10 +33,10 @@ const Portfolio = () => {
           <div className='project-name'><h2>{project.project_name} </h2></div>
           <div className='project-languages'><h4>{project.project_languages} </h4></div>
           <div className='project-description'><h4>{project.project_description} </h4></div>
-          <div className='buttons'>
-            <button className='portfolio-btn'>  Demo </button>
-            <button className='portfolio-btn'> Github Repo</button>
-          </div>
+            <div className='buttons'>
+              { project.project_repo ? <a href={project.project_repo} target="_blank" rel="noreferrer"> <button className='portfolio-btn'> Demo </button></a> : null }
+              { project.project_demo ? <a href={project.project_demo} target="_blank" rel="noreferrer"> <button className='portfolio-btn'> Github Repo </button></a> : null }
+            </div>
         </div>
         <div className='images-container'>
           <div className="project-cover" ><img src={project.project_cover}></img></div>
